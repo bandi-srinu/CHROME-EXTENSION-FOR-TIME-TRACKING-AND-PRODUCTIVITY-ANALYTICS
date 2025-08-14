@@ -1,0 +1,22 @@
+---
+
+# 🔌 Chrome Extension
+
+### `extension/manifest.json`
+```json
+{
+  "manifest_version": 3,
+  "name": "Productivity Time Tracker",
+  "version": "1.0.0",
+  "description": "Track time spent on websites and view productivity analytics.",
+  "permissions": ["tabs", "storage", "idle"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Productivity Tracker",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
