@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; max-width: 640px; margin: 24px auto; }
+      input, button { padding: 8px; }
+      .row { display: flex; gap: 8px; margin: 8px 0; }
+      ul { line-height: 1.9; }
+      code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h2>Productivity Tracker – Options</h2>
+
+    <div class="row">
+      <label>Backend URL</label>
+      <input id="backendUrl" placeholder="http://localhost:4000" style="flex:1" />
+      <button id="save">Save</button>
+    </div>
+
+    <p>Known domains:</p>
+    <ul id="domains"></ul>
+
+    <script src="options.js"></script>
+  </body>
+</html>
