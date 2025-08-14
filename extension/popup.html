@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; min-width: 280px; padding: 12px; }
+      .row { display: flex; justify-content: space-between; margin: 8px 0; }
+      button, input[type="checkbox"] { cursor: pointer; }
+      .muted { color: #666; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h3>Productivity Tracker</h3>
+    <div class="row">
+      <span>Tracking enabled</span>
+      <input id="toggle" type="checkbox" />
+    </div>
+    <div class="row">
+      <span>Backend</span>
+      <code id="backend"></code>
+    </div>
+    <div class="row">
+      <span>Current domain</span>
+      <strong id="domain">–</strong>
+    </div>
+    <div class="row">
+      <button id="markProd">Mark Productive</button>
+      <button id="markUnprod">Mark Unproductive</button>
+    </div>
+    <p class="muted">
+      Open <a id="dash" href="#" target="_blank">Dashboard</a> to see weekly stats.
+    </p>
+    <script src="popup.js"></script>
+  </body>
+</html>
